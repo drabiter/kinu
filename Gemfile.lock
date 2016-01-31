@@ -10,9 +10,11 @@ GEM
     sawyer (0.6.0)
       addressable (~> 2.3.5)
       faraday (~> 0.8, < 0.10)
+    terminal-table (1.5.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   octokit (~> 4.0)
+  terminal-table
