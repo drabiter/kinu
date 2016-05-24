@@ -11,4 +11,12 @@ class GithubService
     @client.search_issues "repo:veritrans/payment-api is:pr is:merged created:#{start_date}..#{end_date}", :order => "desc"
   end
 
+  def find_merged_pull_request_milestone(milestone)
+    @client.search_issues "repo:veritrans/payment-api is:pr is:merged milestone:#{milestone}"
+  end
+
+  def find_open_pull_request_milestone(milestone)
+    @client.search_issues "repo:veritrans/payment-api is:pr is:open milestone:#{milestone}"
+  end
+
 end
